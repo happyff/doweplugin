@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>gitHub</title>
+    <style>
+      .c-defind-liststyle li {
+        list-style: none;
+        position: relative;
+      }
+      .c-defind-liststyle li::before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #ccc;
+        border-radius: 50%;
+        position: absolute;
+        top: -4px;
+        left: -14px;
+      }
+    </style>
+  </head>
+  <body>
     我是一个github编辑的文本哦。
-</body>
+    <h4>无序列表:</h4>
+
+    <!-- 说明li自身圆点的颜色是修改不了的 -->
+    <ul class="c-defind-liststyle">
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
+  </body>
 </html>
